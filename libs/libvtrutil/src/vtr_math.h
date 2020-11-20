@@ -2,6 +2,7 @@
 #define VTR_MATH_H
 
 #include <map>
+#include <vector>
 #include <cmath>
 
 #include "vtr_assert.h"
@@ -27,6 +28,9 @@ T safe_ratio(T numerator, T denominator) {
     }
     return numerator / denominator;
 }
+
+///@brief Returns the median of an input vector.
+float median(std::vector<float> vector);
 
 ///@brief Returns the median of the elements in range [first, last]
 template<typename InputIterator>
